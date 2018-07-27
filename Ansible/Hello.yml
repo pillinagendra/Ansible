@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: execute ansible ping
+    ping:
+  - name: install git
+    apt:
+     name: git
+     update_cache: yes
